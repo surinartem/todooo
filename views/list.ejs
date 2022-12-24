@@ -1,0 +1,26 @@
+<%- include('header'); -%>
+
+
+
+    <div class="box" id="heading">
+        <h1><%= kindOfDay %>!</h1>
+    </div>
+    <div class="box">
+
+            <% for (let i = 0; i < newField.length; i++) { %>
+                <div class="item">
+                    <input type="checkbox" name="checked">
+                    <p> <%= newField[i] %></p>
+                </div>
+                
+                
+            <% } %> 
+            <form action="/" method="post" class="item">
+                <input type="text" name="toDoForm" placeholder="Новая задача" autocomplete="off">
+                
+            </form>
+    </div>
+    
+   
+    <%- include('footer'); -%>
+    
